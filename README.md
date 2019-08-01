@@ -1,5 +1,5 @@
-Idea Plugin Hello World Demo
-=======================
+Idea Plugin Mark Root Action Demo
+=================================
 
 Run plugin in IDEA
 ------------------

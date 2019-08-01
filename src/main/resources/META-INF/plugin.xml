@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>idea-plugin-hello-world-demo</id>
-    <name>idea-plugin-hello-world-demo</name>
+    <id>idea-plugin-mark-root-action-demo</id>
+    <name>idea-plugin-mark-root-action-demo</name>
     <version>1.0</version>
     <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
@@ -29,12 +29,9 @@
     </extensions>
 
     <actions>
-
-        <group id="idea-plugin-hello-world-demo.SampleMenu" text="_Sample Menu" description="Sample menu of idea-plugin-hello-world-demo">
-            <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="idea-plugin-hello-world-demo.action.popup" class="actions.HelloAction" text="_Popup" description="Popup a message"/>
-        </group>
-
+        <action id="markRootActionDemo" class="actions.HelloAction">
+            <add-to-group group-id="ProjectViewPopupMenuSettingsGroup" anchor="after"
+                          relative-to-action="MarkRootGroup"/>
+        </action>
     </actions>
-
 </idea-plugin>
